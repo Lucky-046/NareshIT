@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .container-fluid{
+            background-color: white;
+        }
+        .heading{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .first-li{
+            margin-left: 20px;
+        }
+        .sign-in{
+            margin-left: 1070px;
+            margin-top: 15px;
+        }
+        nav{
+            border-radius: 5px;
+            height: 50px;
+            color:white;
+        }
+        .card{
+            margin-top: 20px;
+            width:430px;
+            height:450px;
+            border-width: 0px;
+            box-shadow: 2px 3px 10px silver;
+        }
+        .login{
+            margin:10px;
+        }
+       
+        .footer{
+            height:300px;
+            background-color: black;
+            margin-top: 30px;
+        }
+        .footer-heading{
+            text-align: center;
+            color:white;
+        }
+        .mini-footer{
+            height:200px;
+            margin-left: 70px;
+            margin-right: 70px;
+            color:white;
+            padding:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2 class="heading">Naresh Institute and Technologies</h2>
+        <header>
+            <div class="d-flex justify-content-between">
+                <nav class="navbar navbar-expand navbar-dark bg-dark w-100">
+                        <ul class="navbar-nav">
+                            <li class="nav-item first-li">
+                                <a class="nav-link" target="frameBody" href="index.html"><span class="bi bi-house">Home</span></a>
+                            </li>
+                            <li class="nav-item first-li">
+                                <a class="nav-link" target="frameBody" href="about.html"><span class="bi bi-info-circle-fill">About</span></a>
+                            </li>
+                            <li class="nav-item first-li">
+                                <a class="nav-link" target="frameBody" href="service.html"><span class="bi bi-question-circle">Service</span></a>
+                            </li>
+                            <li class="nav-item first-li">
+                                <a class="nav-link" target="frameBody" href="contact.html"><span class="bi bi-phone">Contact</span></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li style="list-style: none;" class="nav-item dropdown sign-in">
+                                <div>
+                                    <button data-bs-target="items" data-bs-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+                                        <span class="bi bi-box-arrow-in-right"> Sign In</span>
+                                    </button>
+                                    <ul class="dropdown-menu collapse dropdown-menu-dark id=items" data-bs-popper="static">
+                                        
+                                        <li>
+                                            <a class="nav-link" target="frameBody" href="login.html"><span class="bi bi-person-bounding-box"> Log In</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" target="frameBody" href="signup.html"><span class="bi bi-person-plus"> Sign Up</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" target="frameBody" href="changepassword.html"><span class="bi bi-lock-fill"></span> Change Password</a>
+                                        </li>
+                                    </ul>
+                                </div>        
+                            </li>
+                        </ul>
+                    
+                </nav>
+            </div>
+        </header>
+       <section>
+        <div class="d-flex justify-content-center">
+            <div class="card">
+                <div>
+                    <img src="../public/assets/nareshit/log in.jpg" style="width: 100px; height:100px; border-radius:50px; margin-left: 170px; margin-top: 10px;">
+                    <h2 style="text-align: center;">Please Enter Your Details</h2>
+                </div>
+                <div class="login">
+                    <label class="form-label" for="UserName">Email</label>
+                    <div class="input-group">
+                        <span class="bi bi-person input-group-text"></span>
+                        <input type="text" name="UserName" class="form-control">
+                        <span class="bi bi-check-circle input-group-text"></span>
+                    </div>
+                </div>
+                <div class="login">
+                    <label class="form-label" for="UserName">Password</label>
+                    <div class="input-group">
+                        <span class="bi bi-key input-group-text"></span>
+                        <input type="text" name="UserName" class="form-control">
+                        <span class="bi bi-check-circle input-group-text"></span>
+                    </div>
+                </div>
+                <button style="width:100px; margin-left:175px;" class="btn btn-primary">Log In</button>
+                <a style="margin-left: 165px; margin-top: 10px;" class="forgot" href="#">Forgot Password ?</a>        
+        </div>
+       </section>
+        <div class="footer">
+            <h2 class="footer-heading">Naresh</h2>
+            <div class="mini-footer bg-gradient d-flex justify-content-around">
+                <ul>
+                    <li><span class="bi bi-facebook">Facebook</span></li>
+                    <li><span class="bi bi-google">Google</span></li>
+                    <li><span class="bi bi-twitter">Twitter</span></li>
+                    <li><span class="bi bi-youtube">YouTube</span></li>
+                </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>Name: Naresh Institute</li>
+                    <li>Email: naresh@gmail.com</li>
+                    <li>Contact: +91-xxxxxxx</li>
+                    <li>Adress: Sr nagar, Hyderabad, Telangana, India</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
